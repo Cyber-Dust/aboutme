@@ -1,12 +1,20 @@
 # LAB 1
 # About Me - Guessing Game
+This project is a website that utilizes foundational Javascript, HTML, CSS languages.
 
-## Author: Dasean Volk
+The features include:
+- .push, .unshift, .indexOf Array methods.
+- Loops
+- Conditionals
 
-## Resources:
+
+### Author: Dasean Volk
+
+### Resources:
+---
 
 ##
 
-## Codefellows 2021
+###### Codefellows 2021
 
 

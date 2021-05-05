@@ -31,7 +31,7 @@ let origin = prompt('Was I born and raised in Nebraska? Please answer with a yes
 console.log(origin);
 
 let lowerCaseOrigin = origin.toLowerCase();
-let upperCaseOrigin = origin.toUpperCase();
+
 
 if (lowerCaseOrigin === 'yes' || lowerCaseOrigin === 'y') {
   alert('Well done, ' + userName + '! You definitely know where I come from :)');
@@ -47,7 +47,7 @@ let navy = prompt('Did I honarbly discharge from the United States Navy as a thi
 console.log(navy);
 
 let lowerCaseNavy = navy.toLowerCase();
-let upperCaseNavy = navy.toUpperCase();
+
 
 if (lowerCaseNavy === 'yes' || lowerCaseNavy === 'y') {
   alert('Well done, ' + userName + '! I was indeed a second class Petty Officer, good work! :)');
@@ -63,7 +63,7 @@ let school = prompt('Do I have 2 associates degrees? Please answer with a yes or
 console.log(school);
 
 let lowerCaseSchool = school.toLowerCase();
-let upperCaseSchool = school.toUpperCase();
+
 
 if (lowerCaseSchool === 'yes' || lowerCaseSchool === 'y') {
   alert('Nice work, ' + userName + '! I do have 2 associates degrees! :)');
@@ -79,7 +79,7 @@ let skate = prompt('Is one of my favorite passtimes ice skating? Please answer w
 console.log(skate);
 
 let lowerCaseSkate = skate.toLowerCase();
-let upperCaseSkate = skate.toUpperCase();
+
 
 if (lowerCaseSkate === 'yes' || lowerCaseSkate === 'y') {
   alert('Nope! I have no idea how to ice skate. I would rather spend my time reading.');
@@ -95,7 +95,7 @@ let goal = prompt('Is one of my goals in life to become an Architect? Please ans
 console.log(goal);
 
 let lowerCaseGoal = goal.toLowerCase();
-let upperCaseGoal = goal.toUpperCase();
+
 
 if (lowerCaseGoal === 'yes' || lowerCaseGoal === 'y') {
   alert('Nope! I have no intention to become an Architect. Pretty rad route though, I respect it.');
@@ -105,7 +105,14 @@ if (lowerCaseGoal === 'yes' || lowerCaseGoal === 'y') {
   alert ('Are you sure you read the question all the way through ' + userName + "?")
 }
 
-alert('Great work! You may now proceed to the rest of the site. ENJOY! ⭐️')
+//QUESTION 6:
+//Loop City
+let numberGame = prompt('Guess a number from 1-50 🌀')
+
+
+
+
+alert('Great work '+ userName + '! You may now proceed to the rest of the site. ENJOY! ⭐️');
 
 
 
