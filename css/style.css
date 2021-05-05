@@ -1,0 +1,33 @@
+header {
+  color: rgb(145, 87, 20);
+  text-align: center;
+  padding: 0px;
+  border: grad rgb(27, 21, 20);
+  background: linear-gradient(salmon, bisque);
+}
+
+h2 {
+  text-align: center;
+  color: rgb(112, 65, 17); 
+  border: 2px solid salmon;
+  background: linear-gradient(salmon, bisque);
+  padding: 5px 5px 5px 5px;
+}
+
+body {
+  background:linear-gradient(bisque, salmon) 
+}
+
+p {
+  text-align: center;
+  color: rgb(39, 77, 77);
+}
+
+ul { 
+  display: inline-block; 
+  text-align: left; 
+  color: rgb(39, 77, 77);
+}
+
+
+
