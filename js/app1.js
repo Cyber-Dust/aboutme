@@ -34,15 +34,17 @@ console.log(origin);
 
 let lowerCaseOrigin = origin.toLowerCase();
 
-
-if (lowerCaseOrigin === 'yes' || lowerCaseOrigin === 'y') {
-  alert('Well done, ' + userName + '! You definitely know where I come from :)');
-  userScore++;
-} else if (lowerCaseOrigin === 'no' || lowerCaseOrigin === 'n') {
-  alert('Nope! I actually am a cornfed Nebraskan..')
-} else {
-  alert ('Are you sure you read the question all the way through ' + userName + "?")
+function myOrigin(){
+  if (lowerCaseOrigin === 'yes' || lowerCaseOrigin === 'y') {
+    alert('Well done, ' + userName + '! You definitely know where I come from :)');
+    userScore++;
+  } else if (lowerCaseOrigin === 'no' || lowerCaseOrigin === 'n') {
+    alert('Nope! I actually am a cornfed Nebraskan..');
+  } else {
+    alert ('Are you sure you read the question all the way through ' + userName + "?");
+  }
 }
+myOrigin();
 
 //QUESTION 2:
 let navy = prompt('Did I honarbly discharge from the United States Navy as a third class Petty Officer? Please answer with a yes or no.')
@@ -50,16 +52,19 @@ let navy = prompt('Did I honarbly discharge from the United States Navy as a thi
 console.log(navy);
 
 let lowerCaseNavy = navy.toLowerCase();
-
-
-if (lowerCaseNavy === 'yes' || lowerCaseNavy === 'y') {
-  alert('Well done, ' + userName + '! I was indeed a second class Petty Officer, good work! :)');
-  userScore++;
-} else if (lowerCaseNavy === 'no' || lowerCaseNavy === 'n') {
-  alert('Close, but no cigar. I was a second class, not a third class..')
-} else {
-  alert ('Are you sure you read the question all the way through ' + userName + "?")
+  
+function myNavy(){
+  if (lowerCaseNavy === 'yes' || lowerCaseNavy === 'y') {
+    alert('Well done, ' + userName + '! I was indeed a second class Petty Officer, good work! :)');
+    userScore++;
+  } else if (lowerCaseNavy === 'no' || lowerCaseNavy === 'n') {
+    alert('Close, but no cigar. I was a second class, not a third class..')
+  } else {
+    alert ('Are you sure you read the question all the way through ' + userName + "?")
+  }
 }
+myNavy();
+
 
 //QUESTION 3:
 let school = prompt('Do I have 2 associates degrees? Please answer with a yes or no.')
@@ -68,15 +73,18 @@ console.log(school);
 
 let lowerCaseSchool = school.toLowerCase();
 
-
-if (lowerCaseSchool === 'yes' || lowerCaseSchool === 'y') {
-  alert('Nice work, ' + userName + '! I do have 2 associates degrees! :)');
-  userScore++;
-} else if (lowerCaseSchool === 'no' || lowerCaseSchool === 'n') {
-  alert('Close, but no cigar. I do have 2 associates degrees...')
-} else {
-  alert ('Are you sure you read the question all the way through ' + userName + "?")
+function mySchool(){
+  if (lowerCaseSchool === 'yes' || lowerCaseSchool === 'y') {
+    alert('Nice work, ' + userName + '! I do have 2 associates degrees! :)');
+    userScore++;
+  } else if (lowerCaseSchool === 'no' || lowerCaseSchool === 'n') {
+    alert('Close, but no cigar. I do have 2 associates degrees...')
+  } else {
+    alert ('Are you sure you read the question all the way through ' + userName + "?")
+  }
+  
 }
+mySchool();
 
 //QUESTION 4:
 let skate = prompt('Is one of my favorite passtimes ice skating? Please answer with a yes or no.')
@@ -85,15 +93,17 @@ console.log(skate);
 
 let lowerCaseSkate = skate.toLowerCase();
 
-
-if (lowerCaseSkate === 'yes' || lowerCaseSkate === 'y') {
-  alert('Nope! I have no idea how to ice skate. I would rather spend my time reading.');
-} else if (lowerCaseSkate === 'no' || lowerCaseSkate === 'n') {
-  alert('That\'s right, ' + userName + '! Looks like you know me pretty well.');
-  userScore++;
-} else {
-  alert ('Are you sure you read the question all the way through ' + userName + "?")
+function mySkate(){
+  if (lowerCaseSkate === 'yes' || lowerCaseSkate === 'y') {
+    alert('Nope! I have no idea how to ice skate. I would rather spend my time reading.');
+  } else if (lowerCaseSkate === 'no' || lowerCaseSkate === 'n') {
+    alert('That\'s right, ' + userName + '! Looks like you know me pretty well.');
+    userScore++;
+  } else {
+    alert ('Are you sure you read the question all the way through ' + userName + "?")
+  }
 }
+mySkate();
 
 //QUESTION 5:
 let goal = prompt('Is one of my goals in life to become an Architect? Please answer with a yes or no.')
@@ -102,33 +112,37 @@ console.log(goal);
 
 let lowerCaseGoal = goal.toLowerCase();
 
-
-if (lowerCaseGoal === 'yes' || lowerCaseGoal === 'y') {
-  alert('Nope! I have no intention to become an Architect. Pretty rad route though, I respect it.');
-} else if (lowerCaseGoal === 'no' || lowerCaseGoal === 'n') {
-  alert('That\'s right, ' + userName + '! Looks like you know me pretty well.');
-  userScore++;
-} else {
-  alert ('Are you sure you read the question all the way through ' + userName + "?")
+function myGoal(){
+  if (lowerCaseGoal === 'yes' || lowerCaseGoal === 'y') {
+    alert('Nope! I have no intention to become an Architect. Pretty rad route though, I respect it.');
+  } else if (lowerCaseGoal === 'no' || lowerCaseGoal === 'n') {
+    alert('That\'s right, ' + userName + '! Looks like you know me pretty well.');
+    userScore++;
+  } else {
+    alert ('Are you sure you read the question all the way through ' + userName + "?")
+  }
 }
+myGoal();
 
 //QUESTION 6:
 //Loop City
 let myNum = 34;
 
-for (let i = 0; i < 4 ; i++) {
-  let userGuess = prompt('Pick a number between 1-50!🌀');
-  let numGuess = parseInt(userGuess);
-  if (numGuess === myNum) {
-    alert('Superb! You did it, 34 is the number!');
-    userScore++;
-    break;
-  } else if (numGuess > myNum) {
-    alert('Too high. Try again.');
-  } else if (numGuess < myNum) {
-    alert('Too low. Try again.');
+function myGuess(){
+  for (let i = 0; i < 4 ; i++) {
+    let userGuess = prompt('Pick a number between 1-50!🌀');
+    let numGuess = parseInt(userGuess);
+    if (numGuess === myNum) {
+      alert('Superb! You did it, 34 is the number!');
+      userScore++;
+    } else if (numGuess > myNum) {
+      alert('Too high. Try again.');
+    } else if (numGuess < myNum) {
+      alert('Too low. Try again.');
+    }
   }
 }
+myGuess();
 
 //QUESTION 7:
 //challenge: create a list of your fav moveis. Give the user 5 guesses to figure out one of the movies from your list. If  the user guesses correctly tell them they are correct and stop giving them more chances to guess. If they guess incorectly, let them know and prompt them to guess again.
@@ -141,35 +155,40 @@ for (let i = 0; i < 4 ; i++) {
 // a variable set to a number of guesses 
 // we are going to need a flag for when they get it right
 
+
 let myFavMovies = ['drive', 'rosemary\'s baby', 'interstellar', 'goodfellas', 'school of rock', 'tron legacy', 'the graduate', 'twin peaks', 'cat on a hot tin roof', 'there will be blood'];
 
 let counter = 6;
 let rightAnswer = false;
-while (rightAnswer === false && counter > 0) {
+
+function myMovies(){
+  while (rightAnswer === false && counter > 0) {
     let question = 'Guess one of my favorite movies? Choose from the following:'
     let choices = ' \n 1. drive \n 2. rosemary\'s baby \n 3. interstellar \n 4. goodfellas \n 5. school of rock \n 6. tron legacy \n 7. the graduate \n 8. twin peaks \n 9. cat on a hot tin roof \n 10. there will be blood \n '
     // they get in the loop and I ask them the question
     let userGuess = prompt(question + choices).toLowerCase();
     // add method (.toLowerCase()) to end of prompt
     // I check thier guess against my list of movies
- 
-   for (let i = 0; i < myFavMovies.length; i++) {
-     console.log(myFavMovies[i]);
-     if (userGuess === myFavMovies[i]) {
-     // if they get it right I tell them
-     alert('Nice Job! You are correct!');
-     userScore++;
-     //userscore equals userscore+1
-     // change they got it right to true
-     rightAnswer = true;
+    
+    for (let i = 0; i < myFavMovies.length; i++) {
+      console.log(myFavMovies[i]);
+      if (userGuess === myFavMovies[i]) {
+        // if they get it right I tell them
+        alert('Nice Job! You are correct!');
+        userScore++;
+        //userscore equals userscore+1
+        // change they got it right to true
+        rightAnswer = true;
+      }
     }
-   }
-
-   if (rightAnswer === false) {
+    
+    if (rightAnswer === false) {
       alert('That is not the correct answer. Guess again!');
-   }
+    }
     counter--;
+  }
 }
+myMovies();
 
 alert('Great work '+ userName + '! You got ' + userScore + ' out of 7! You may now proceed to the rest of the site. ENJOY! ⭐️')
 

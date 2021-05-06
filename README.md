@@ -9,7 +9,10 @@ The features include:
 
 
 ### Author: Dasean Volk
-
+### Contributors: Benjamin Ibarra
+Code collaborated on 5/6/21
+- Navigator: CyberDust 
+- Driver: Barra
 ### Resources:
 ---
 
